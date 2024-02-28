@@ -31,7 +31,7 @@ app.get("/", (req, res) => {
 })
 app.use(
     cors({
-        origin: ["https://mealco-client.vercel.app"],
+        origin: ["http://localhost:3000"],
         methods: ["GET", "POST", "PUT", "DELETE"],
         credentials: true,
     })

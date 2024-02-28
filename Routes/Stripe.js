@@ -92,8 +92,8 @@ router.post('/create-checkout-session', async (req, res) => {
         customer: customer.id,
         line_items,
         mode: 'payment',
-        success_url: 'https://mealco-client.vercel.app/success',
-        cancel_url: 'https://mealco-client.vercel.app/cart',
+        success_url: 'http://localhost:3000/success',
+        cancel_url: 'http://localhost:3000/cart',
 
     });
 
