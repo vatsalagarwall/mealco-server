@@ -26,7 +26,9 @@ app.listen(5050, () => {
     console.log("Server is listening on port 5050");
 });
 
-
+app.get("/", (req, res) => {
+    res.send("Hello")
+})
 app.use(
     cors({
         origin: ["https://mealco-client.vercel.app"],
