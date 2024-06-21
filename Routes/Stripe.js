@@ -98,6 +98,7 @@ router.post('/create-checkout-session', async (req, res) => {
     });
 
     res.send({ url: session.url });
+    //5050/stripe/webhook check video
 });
 
 
